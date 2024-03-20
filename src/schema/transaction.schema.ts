@@ -11,7 +11,6 @@ export interface ITransaction extends Document {
 	webhookResponses: Array<any>;
 	lastWebhookResponse: any;
 	chargeId: string;
-	tapId: string;
 }
 
 export const TransactionSchema = new mongoose.Schema(
@@ -56,7 +55,6 @@ export const TransactionSchema = new mongoose.Schema(
 			default: {},
 		},
 		chargeId: String,
-		tapId: String,
 	},
 	{
 		versionKey: false,
